@@ -1670,3 +1670,8 @@ span.social-text {
 #magicMouseCursor {
 	border: 1px solid var(--main-color) !important;
 }
+
+#mapwrapper {
+	width: 100%;
+	height: 450px;
+}
