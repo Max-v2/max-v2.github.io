@@ -217,7 +217,7 @@
 		touchControls: true,
 		gyroControls: false,
 		backgroundColor: 0x0,
-		color: 0x009788ff,
+		color: 0x70F4E7,
 		//   minHeight: 200.00,
 		//   minWidth: 200.00,
 		scale: 1.00,
