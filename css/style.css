@@ -1125,6 +1125,16 @@ span.social-text {
 	border-bottom: 1px solid var(--main-border);
 }
 
+.portfolio-item {
+	display: none;
+	/* Ocultar todos los elementos por defecto */
+}
+
+.portfolio-item.visible {
+	display: block;
+	/* Mostrar solo los elementos visibles */
+}
+
 .mixitup-button button {
 	color: var(--primary-color);
 	padding: 12px 14px;
@@ -1674,14 +1684,4 @@ span.social-text {
 #mapwrapper {
 	width: 100%;
 	height: 450px;
-}
-
-.portfolio-item {
-	display: none;
-	/* Ocultar todos los elementos por defecto */
-}
-
-.portfolio-item.visible {
-	display: block;
-	/* Mostrar solo los elementos visibles */
 }

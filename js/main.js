@@ -13,6 +13,7 @@
 	// 7. mixitup js
 	// 8. Contact form
 	// 9. vanta js 
+	// 10. Botón "Load More"
 	//-------------------------------------------------
 
 	// 1. preloader
@@ -240,7 +241,8 @@
 	//    magicMouse(options);
 
 
-
+	// 10. Botón "Load More"
+	// ---------------------------------------------------------------------------
 	"use strict";
 
 	$(document).ready(function () {
