@@ -1675,3 +1675,13 @@ span.social-text {
 	width: 100%;
 	height: 450px;
 }
+
+.portfolio-item {
+	display: none;
+	/* Ocultar todos los elementos por defecto */
+}
+
+.portfolio-item.visible {
+	display: block;
+	/* Mostrar solo los elementos visibles */
+}

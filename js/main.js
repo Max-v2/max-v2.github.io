@@ -241,5 +241,30 @@
 
 
 
+	"use strict";
+
+	$(document).ready(function () {
+		// Mostrar los primeros 6 elementos del portafolio
+		var itemsToShow = 6;
+		var $portfolioItems = $('.portfolio-item');
+		$portfolioItems.filter(function (index) {
+			return $(this).data('order') <= itemsToShow;
+		}).addClass('visible');
+
+		// Manejar el clic en el botón "Load More"
+		$('#load-more').on('click', function (e) {
+			e.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+			var visibleItems = $('.portfolio-item.visible').length;
+			$portfolioItems.filter(function (index) {
+				return $(this).data('order') > visibleItems && $(this).data('order') <= visibleItems + itemsToShow;
+			}).addClass('visible');
+
+			// Ocultar el botón si no hay más elementos para mostrar
+			if ($('.portfolio-item.visible').length === $portfolioItems.length) {
+				$('#load-more').hide();
+			}
+		});
+	});
+
 
 })(jQuery);
