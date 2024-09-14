@@ -1066,7 +1066,8 @@
                     </div><!-- /container -->
                 </div><!-- /resume-page -->
 
-
+                <!-- Portafolio-page 
+                ================================================== -->
                 <div id="portfolio" class="page-margin-top portfolio-area over-hidden">
                     <div class="container p-0">
                         <div class="content-wrapper-padding white-bg border-radius12 position-relative">
@@ -1098,7 +1099,7 @@
 
                                 <div class="mixitup-gallery row my-4 pt-10 pb-10 px-2 justify-content-center">
 
-                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model"
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item "
                                         data-order="1">
                                         <div class="position-relative">
                                             <div class="single-portfolio position-relative over-hidden">
@@ -1122,7 +1123,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model"
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item"
                                         data-order="2">
                                         <div class="position-relative">
                                             <div class="single-portfolio position-relative over-hidden">
@@ -1146,7 +1147,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model"
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item"
                                         data-order="3">
                                         <div class="position-relative">
                                             <div class="single-portfolio position-relative over-hidden">
@@ -1170,7 +1171,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model"
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item"
                                         data-order="4">
                                         <div class="position-relative">
                                             <div class="single-portfolio position-relative over-hidden">
@@ -1194,7 +1195,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model"
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item"
                                         data-order="5">
                                         <div class="position-relative">
                                             <div class="single-portfolio position-relative over-hidden">
@@ -1218,11 +1219,60 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix model portfolio-item"
+                                        data-order="6">
+                                        <div class="position-relative">
+                                            <div class="single-portfolio position-relative over-hidden">
+                                                <img class="w-100 border-radius12"
+                                                    src="images/portfolio/portfolio-img6.jpg" alt="image">
+                                                <div
+                                                    class="port-icon mb-10 text-center position-absolute transition3 z-index11">
+                                                    <span class="theme-color d-inline-block" data-toggle="modal"
+                                                        data-target="#exampleModal-p6"><i
+                                                            class="far fa-external-link-alt"></i>
+                                                    </span>
+                                                </div><!-- /port-content -->
+                                                <div
+                                                    class="port-over-content text-center position-absolute left-0 pl-30 pr-30 pb-35 pt-40 z-index1">
+                                                    <span
+                                                        class="text-white font-family-CircularStdBold mb-15 d-block text-uppercase">GENERATIVE
+                                                        AI MODEL</span>
+                                                    <h2 class="text-white">Young Coach</h2>
+                                                </div>
+                                            </div><!-- /single-prot -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12 p-2 mix pro exe portfolio-item"
+                                        data-order="7">
+                                        <div class="position-relative">
+                                            <div class="single-portfolio position-relative over-hidden">
+                                                <img class="w-100 border-radius12"
+                                                    src="images/portfolio/portfolio-img7.jpg" alt="image">
+                                                <div
+                                                    class="port-icon mb-10 text-center position-absolute transition3 z-index11">
+                                                    <span class="theme-color d-inline-block" data-toggle="modal"
+                                                        data-target="#exampleModal-p7"><i
+                                                            class="far fa-external-link-alt"></i>
+                                                    </span>
+                                                </div><!-- /port-content -->
+                                                <div
+                                                    class="port-over-content text-center position-absolute left-0 pl-30 pr-30 pb-35 pt-40 z-index1">
+                                                    <span
+                                                        class="text-white font-family-CircularStdBold mb-15 d-block text-uppercase">SCRIPT
+                                                        DEVELOPMENT</span>
+                                                    <h2 class="text-white">BlumFarm</h2>
+                                                </div>
+                                            </div><!-- /single-prot -->
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div><!-- /mixitup-wrapper -->
 
                             <div class="my-btn text-center">
-                                <a href="#" class="btn transparent-bg text-capitalize primary-color">load more</a>
+                                <a href="#" id="load-more" class="btn transparent-bg text-capitalize primary-color">load
+                                    more</a>
                             </div>
 
                         </div><!-- /content-wrapper-padding -->
@@ -1413,8 +1463,7 @@
                                                                     </b>
                                                                     With this description, the AI generated a new image,
                                                                     using my face
-                                                                    as the base while adapting the surrounding elements
-                                                                    to match the futuristic aesthetic described.
+                                                                    as the base while adapting the surrounding elements.
                                                                 </p>
                                                                 <p>The process involved multiple stages, including data
                                                                     cleaning, image preprocessing, and carefully
@@ -1545,8 +1594,7 @@
                                                                     </b>
                                                                     With this description, the AI generated a new image,
                                                                     using my face
-                                                                    as the base while adapting the surrounding elements
-                                                                    to match the futuristic aesthetic described.
+                                                                    as the base while adapting the surrounding elements.
                                                                 </p>
                                                                 <p>The process involved multiple stages, including data
                                                                     cleaning, image preprocessing, and carefully
@@ -1677,8 +1725,7 @@
                                                                     </b>
                                                                     With this description, the AI generated a new image,
                                                                     using my face
-                                                                    as the base while adapting the surrounding elements
-                                                                    to match the futuristic aesthetic described.
+                                                                    as the base while adapting the surrounding elements.
                                                                 </p>
                                                                 <p>The process involved multiple stages, including data
                                                                     cleaning, image preprocessing, and carefully
@@ -1761,7 +1808,7 @@
                         </div>
                         <!-- Modal 4 end -->
 
-                        <!-- Modal 4 start -->
+                        <!-- Modal 5 start -->
                         <div class="modal fade pr-0" id="exampleModal-p5" tabindex="-5" role="dialog"
                             aria-labelledby="exampleModal-p1" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -1809,8 +1856,7 @@
                                                                     </b>
                                                                     With this description, the AI generated a new image,
                                                                     using my face
-                                                                    as the base while adapting the surrounding elements
-                                                                    to match the futuristic aesthetic described.
+                                                                    as the base while adapting the surrounding elements.
                                                                 </p>
                                                                 <p>The process involved multiple stages, including data
                                                                     cleaning, image preprocessing, and carefully
@@ -1891,7 +1937,271 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal 4 end -->
+                        <!-- Modal 5 end -->
+
+                        <!-- Modal 6 start -->
+                        <div class="modal fade pr-0" id="exampleModal-p6" tabindex="-6" role="dialog"
+                            aria-labelledby="exampleModal-p1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content position-relative">
+                                    <div class="close-icon position-absolute right-0 top-0 z-index1">
+                                        <button type="button" class="close d-inline-block mt-10 mr-15"
+                                            data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-content border-0">
+                                        <div class="modal-body p-0">
+                                            <div
+                                                class="content-wrapper-padding white-bg content-wrapper-padding white-bg border-radius12 position-relative">
+                                                <div class="portfolio-details-wrapper mt-10">
+                                                    <div class="row">
+                                                        <div class="col-xl-12  col-lg-12 col-md-  col-sm- col-">
+                                                            <img class="w-100  border-radius8"
+                                                                src="images/portfolio-details/pportfolio-details-img-6.jpg"
+                                                                alt="image">
+                                                        </div><!-- /col -->
+                                                        <div class="col-xl-8  col-lg-8  col-md-12  col-sm-12 col-12">
+                                                            <div class="portfolio-details-content mt-40">
+                                                                <h2 class="mb-25">Young Coach</h2>
+                                                                <p class="mb-22">I have created and trained an
+                                                                    artificial intelligence model using images of myself
+                                                                    as the foundation. The project
+                                                                    started with gathering a series of photos of me from
+                                                                    different angles and with various expressions to
+                                                                    feed the model.
+                                                                    Using advanced machine learning techniques, such as
+                                                                    Generative Adversarial Networks (GANs) or
+                                                                    pre-trained models, I
+                                                                    enabled the AI to accurately recognize and reproduce
+                                                                    my face with high precision.
+                                                                </p>
+                                                                <p class="mb-22">Once the model was fully trained, I set
+                                                                    out to generate images based on creative prompts.
+                                                                    One of the prompts I used was:
+                                                                    <b style="color: black; font-weight: bold">"solo,
+                                                                        looking at viewer, brown hair, 1boy, brown eyes,
+                                                                        male focus, headband, portrait"
+                                                                    </b>
+                                                                    With this description, the AI generated a new image,
+                                                                    using my face
+                                                                    as the base while adapting the surrounding elements.
+                                                                </p>
+                                                                <p>The process involved multiple stages, including data
+                                                                    cleaning, image preprocessing, and carefully
+                                                                    fine-tuning the model
+                                                                    to ensure that the images were both accurate and
+                                                                    creative. In the end, I created a system that fuses
+                                                                    my visual identity
+                                                                    with the power of AI to generate striking,
+                                                                    one-of-a-kind images, blending reality with
+                                                                    imagination.</p>
+                                                                <div class="blog-page-footer mt-35">
+                                                                    <div
+                                                                        class="blog-page-social-link d-flex align-items-center mt-15">
+                                                                        <span
+                                                                            class="d-block font-family-CircularStdBold primary-color pr-30 mb-0">Share:</span>
+                                                                        <ul class="social-link text-md-right">
+                                                                            <li class="d-inline-block">
+                                                                                <a class="instagram text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://www.instagram.com/max26.uy/"><i
+                                                                                        class="fab fa-instagram"></i></a>
+                                                                            </li>
+                                                                            <li class="d-inline-block">
+                                                                                <a class="linkedin-color text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://www.linkedin.com/in/alvarez-kevin/"><i
+                                                                                        class="fab fa-linkedin-in"></i></a>
+                                                                            </li>
+                                                                            <li class="d-inline-block">
+                                                                                <a class="github-color text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://github.com/Max-v2"><i
+                                                                                        class="fab fa-github"></i></i></a>
+                                                                            </li>
+                                                                        </ul><!-- social-link -->
+                                                                    </div><!-- /blog-page-social-link -->
+                                                                </div>
+
+                                                            </div><!-- /portfolio-details-content -->
+                                                        </div><!-- /col -->
+                                                        <div
+                                                            class="col-xl-4  col-lg-4  col-md-12  col-sm-12 col-12 px-3 p-lg-1">
+                                                            <div class="portfolio-details-sidebar pl-30">
+                                                                <div
+                                                                    class="meta-wrapper neutral-bg mt-50 pt-40 pb-25 pr-20 pl-45 mt-40 mb-10">
+                                                                    <ul class="item-meta d-inline-block pr-30">
+                                                                        <li>Project Type</li>
+                                                                        <li>Category</li>
+                                                                        <li>Creator</li>
+                                                                        <li>Live Demo</li>
+                                                                    </ul>
+                                                                    <ul class="item-meta d-inline-block">
+                                                                        <li>
+                                                                            <span class="d-inline-block">Generative Ai
+                                                                                Model
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block">Image generator
+                                                                                AI</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block">Kevin
+                                                                                Alvarez</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block"> <a
+                                                                                    href="https://tensor.art/models/771915462855565771"
+                                                                                    class="theme-color">Click
+                                                                                    Here</a></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div><!-- /portfolio-sidebar -->
+                                                        </div><!-- /col -->
+                                                    </div>
+                                                </div><!-- /row /portfolio-content-wrapper -->
+                                            </div><!-- /content-wrapper-padding -->
+                                        </div><!-- /modal-body -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal 6 end -->
+
+                        <!-- Modal 7 start -->
+                        <div class="modal fade pr-0" id="exampleModal-p7" tabindex="-7" role="dialog"
+                            aria-labelledby="exampleModal-p1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content position-relative">
+                                    <div class="close-icon position-absolute right-0 top-0 z-index1">
+                                        <button type="button" class="close d-inline-block mt-10 mr-15"
+                                            data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-content border-0">
+                                        <div class="modal-body p-0">
+                                            <div
+                                                class="content-wrapper-padding white-bg content-wrapper-padding white-bg border-radius12 position-relative">
+                                                <div class="portfolio-details-wrapper mt-10">
+                                                    <div class="row">
+                                                        <div class="col-xl-12  col-lg-12 col-md-  col-sm- col-">
+                                                            <img class="w-100  border-radius8"
+                                                                src="images/portfolio-details/pportfolio-details-img-7.jpg"
+                                                                alt="image">
+                                                        </div><!-- /col -->
+                                                        <div class="col-xl-8  col-lg-8  col-md-12  col-sm-12 col-12">
+                                                            <div class="portfolio-details-content mt-40">
+                                                                <h2 class="mb-25">BlumFarm</h2>
+                                                                <p class="mb-22">Blumfarm is an executable designed to
+                                                                    automate a fast-paced, adrenaline-filled game where
+                                                                    players must catch falling
+                                                                    green tokens within a limited time. The primary goal
+                                                                    is to collect as many tokens as possible before time
+                                                                    runs out,
+                                                                    adding a sense of urgency and excitement to each
+                                                                    round. Every token you manage to catch is converted
+                                                                    into Blum Points,
+                                                                    which accumulate in your balance, helping you
+                                                                    progress faster in the game.
+                                                                </p>
+                                                                <p class="mb-22">The gameplay is simple yet challenging,
+                                                                    keeping you on your toes at all times. As you
+                                                                    advance and catch more tokens, the
+                                                                    pace of the rounds increases, demanding full focus
+                                                                    and quick reflexes. This combination of simplicity
+                                                                    and speed ensures
+                                                                    an engaging and addictive experience, perfect for
+                                                                    players looking to improve their performance while
+                                                                    collecting Blum
+                                                                    Points more efficiently with each try.</p>
+                                                                <p>Each game session requires 1 Game Pass, acting as
+                                                                    your entry ticket. This adds a strategic element, as
+                                                                    each attempt
+                                                                    motivates you to optimize your performance and
+                                                                    capture as many tokens as possible. Blumfarm not
+                                                                    only offers a fun way to
+                                                                    quickly accumulate points but also challenges your
+                                                                    skills, making it an immersive and rewarding
+                                                                    experience for any
+                                                                    player looking to boost their score and consistently
+                                                                    grow their balance.</p>
+                                                                <div class="blog-page-footer mt-35">
+                                                                    <div
+                                                                        class="blog-page-social-link d-flex align-items-center mt-15">
+                                                                        <span
+                                                                            class="d-block font-family-CircularStdBold primary-color pr-30 mb-0">Share:</span>
+                                                                        <ul class="social-link text-md-right">
+                                                                            <li class="d-inline-block">
+                                                                                <a class="instagram text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://www.instagram.com/max26.uy/"><i
+                                                                                        class="fab fa-instagram"></i></a>
+                                                                            </li>
+                                                                            <li class="d-inline-block">
+                                                                                <a class="linkedin-color text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://www.linkedin.com/in/alvarez-kevin/"><i
+                                                                                        class="fab fa-linkedin-in"></i></a>
+                                                                            </li>
+                                                                            <li class="d-inline-block">
+                                                                                <a class="github-color text-center pl-10 d-inline-block transition-3"
+                                                                                    href="https://github.com/Max-v2"><i
+                                                                                        class="fab fa-github"></i></i></a>
+                                                                            </li>
+                                                                        </ul><!-- social-link -->
+                                                                    </div><!-- /blog-page-social-link -->
+                                                                </div>
+
+                                                            </div><!-- /portfolio-details-content -->
+                                                        </div><!-- /col -->
+                                                        <div
+                                                            class="col-xl-4  col-lg-4  col-md-12  col-sm-12 col-12 px-3 p-lg-1">
+                                                            <div class="portfolio-details-sidebar pl-30">
+                                                                <div
+                                                                    class="meta-wrapper neutral-bg mt-50 pt-40 pb-25 pr-20 pl-45 mt-40 mb-10">
+                                                                    <ul class="item-meta d-inline-block pr-30">
+                                                                        <li>Project Type</li>
+                                                                        <li>Category</li>
+                                                                        <li>Creator</li>
+                                                                        <li>Customer</li>
+                                                                        <li>Live Demo</li>
+                                                                    </ul>
+                                                                    <ul class="item-meta d-inline-block">
+                                                                        <li>
+                                                                            <span class="d-inline-block">Script
+                                                                                Development
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span
+                                                                                class="d-inline-block">Executable</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block">Kevin
+                                                                                Alvarez</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block">Telegram
+                                                                                Community</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="d-inline-block"> <a
+                                                                                    href="https://github.com/Max-v2/BlumFarm"
+                                                                                    class="theme-color">Click
+                                                                                    Here</a></span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div><!-- /portfolio-sidebar -->
+                                                        </div><!-- /col -->
+                                                    </div>
+                                                </div><!-- /row /portfolio-content-wrapper -->
+                                            </div><!-- /content-wrapper-padding -->
+                                        </div><!-- /modal-body -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal 7 end -->
 
                     </div><!-- /container -->
                 </div><!-- /portfolio-page -->
