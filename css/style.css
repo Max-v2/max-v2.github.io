@@ -1125,6 +1125,14 @@ span.social-text {
 	border-bottom: 1px solid var(--main-border);
 }
 
+.portfolio-item {
+	display: none;
+}
+
+.portfolio-item.show {
+	display: block;
+}
+
 .mixitup-button button {
 	color: var(--primary-color);
 	padding: 12px 14px;
@@ -1676,12 +1684,63 @@ span.social-text {
 	height: 450px;
 }
 
-.portfolio-item {
-	display: none;
-	/* Ocultar todos los elementos por defecto */
+/* Slider container */
+.slider-container {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
 }
 
-.portfolio-item.visible {
+/* Slider */
+.slider {
+	display: flex;
+	transition: transform 0.4s ease-in-out;
+}
+
+/* Individual slides */
+.slide {
+	min-width: 100%;
+	transition: opacity 1s ease;
+}
+
+.slide img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+/* Slider buttons */
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hide all slides except the active one */
+.slide {
+	display: none;
+}
+
+.slide.active {
 	display: block;
-	/* Mostrar solo los elementos visibles */
 }
