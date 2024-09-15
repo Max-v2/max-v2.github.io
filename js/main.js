@@ -244,43 +244,30 @@
 
 	// 10. Botón "Load More"
 	// ---------------------------------------------------------------------------
-	document.addEventListener("DOMContentLoaded", function () {
-		const itemsPerPage = 6;
-		let visibleItems = itemsPerPage;
+	"use strict";
 
+	$(document).ready(function () {
+		// Mostrar los primeros 6 elementos del portafolio
+		var itemsToShow = 6;
+		var $portfolioItems = $('.portfolio-item');
+		$portfolioItems.filter(function (index) {
+			return $(this).data('order') <= itemsToShow;
+		}).addClass('visible');
 
-		// Función para mostrar los primeros N elementos de una categoría
-		function showItems() {
-			let allItems = document.querySelectorAll('.portfolio-item');
-			let totalItems = allItems.length;
-			allItems.forEach((item, index) => {
-				if (index < visibleItems) {
-					item.classList.add('show');
-				} else {
-					item.classList.remove('show');
-				}
-			});
+		// Manejar el clic en el botón "Load More"
+		$('#load-more').on('click', function (e) {
+			e.preventDefault(); // Prevenir el comportamiento por defecto del enlace
+			var visibleItems = $('.portfolio-item.visible').length;
+			$portfolioItems.filter(function (index) {
+				return $(this).data('order') > visibleItems && $(this).data('order') <= visibleItems + itemsToShow;
+			}).addClass('visible');
 
-			// Ocultar enlace "Load More" si ya no quedan más elementos
-			if (visibleItems >= totalItems) {
-				document.getElementById('load-more').style.display = 'none';
-			} else {
-				document.getElementById('load-more').style.display = 'inline-block';
+			// Ocultar el botón si no hay más elementos para mostrar
+			if ($('.portfolio-item.visible').length === $portfolioItems.length) {
+				$('#load-more').hide();
 			}
-		}
-
-		// Evento para el botón "Load More"
-		document.getElementById('load-more').addEventListener('click', function (event) {
-			event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-			visibleItems += itemsPerPage;
-			showItems();
 		});
-
-		// Inicializar mostrando solo los primeros elementos
-		showItems();
 	});
-
-
 
 	// 11. Slider
 	// ---------------------------------------------------------------------------

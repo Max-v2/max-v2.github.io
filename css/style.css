@@ -1127,10 +1127,12 @@ span.social-text {
 
 .portfolio-item {
 	display: none;
+	/* Ocultar todos los elementos por defecto */
 }
 
-.portfolio-item.show {
+.portfolio-item.visible {
 	display: block;
+	/* Mostrar solo los elementos visibles */
 }
 
 .mixitup-button button {
